@@ -13,7 +13,8 @@ resource "google_compute_instance" "example_instance" {
   machine_type = "n1-standard-1"
   zone         = "your_zone"
 
-  tags = ["http-server", "https-server"]
+  #tags = ["http-server", "https-server"]
+ tags = ["foo", "bar"]
 
   boot_disk {
     initialize_params {
